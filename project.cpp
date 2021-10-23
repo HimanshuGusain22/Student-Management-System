@@ -9,7 +9,7 @@ void enter()
 {
 		int ch=0;
 
-			cout<<"How many students do u want to enter??"<<endl;
+			cout<<" || How many students do u want to enter ? ||"<<endl;
 
 			cin>>ch;
 
@@ -19,55 +19,63 @@ void enter()
 
 			for(int i=0;i<ch;i++){
 
-				cout<<"\nEnter the Data of student "<<i+1<<endl<<endl;
+                cout<<endl;
 
-				cout<<"Enter name ";
+				cout<<" || Enter the Data of student || "<<i+1<<endl;
+
+				cout<<endl;
+
+				cout<<" Name of the student : ";
 
 				cin>>arr1[i];
 
-				cout<<"Enter Roll no ";
+				cout<<" Roll no : ";
 
 				cin>>arr2[i];
 
-				cout<<"Enter course ";
+				cout<<" Branch : ";
 
 				cin>>arr3[i];
 
-				cout<<"Enter class ";
+				cout<<" Section : ";
 
 				cin>>arr4[i];
 
-				cout<<"Enter contact ";
+				cout<<" Contact : ";
 
 				cin>>arr5[i];
 
 			}
 
-	    	}
+           }
 
 	    	else{
 
 	    		for(int i=total;i<ch+total;i++){
 
-				cout<<"\nEnter the Data of student "<<i+1<<endl<<endl;
+                cout<<endl;
 
-				cout<<"Enter name ";
+				cout<<" || Enter the Data of student || "<<i+1<<endl;
+
+				cout<<endl;
+
+				cout<<" Name of the student : ";
 
 				cin>>arr1[i];
 
-				cout<<"Enter Roll no ";
+				cout<<" Roll no : ";
 
 				cin>>arr2[i];
 
-				cout<<"Enter course ";
+				cout<<" Branch : ";
 
 				cin>>arr3[i];
 
-				cout<<"Enter class ";
+				cout<<" Section : ";
 
 				cin>>arr4[i];
 
-				cout<<"Enter contact ";
+				cout<<" Contact : ";
 
 				cin>>arr5[i];
 
@@ -84,7 +92,9 @@ void show()
 
 	if(total==0){
 
-		cout<<"No data is entered"<<endl;
+		cout<<" || No data is entered ||"<<endl;
+
+		cout<<endl;
 
 	}
 
@@ -92,17 +102,21 @@ void show()
 
 		for(int i=0;i<total;i++){
 
-	    		cout<<"\nData of Student "<<i+1<<endl<<endl;
+                cout<<endl;
 
-	    		cout<<"Name "<<arr1[i]<<endl;
+	    		cout<<" || Data of Student || "<<i+1<<endl;
 
-	    		cout<<"Roll no "<<arr2[i]<<endl;
+	    		cout<<endl;
 
-	    		cout<<"Course "<<arr3[i]<<endl;
+	    		cout<<" Name of the student :"<<arr1[i]<<endl;
 
-	    		cout<<"Class "<<arr4[i]<<endl;
+	    		cout<<" Roll no : "<<arr2[i]<<endl;
 
-	    		cout<<"Contact "<<arr5[i]<<endl;
+	    		cout<<" Branch : "<<arr3[i]<<endl;
+
+	    		cout<<" Section : "<<arr4[i]<<endl;
+
+	    		cout<<" Contact : "<<arr5[i]<<endl;
 
 	    	    }
 
@@ -116,7 +130,9 @@ void search()
 
 	if(total==0){
 
-		cout<<"No data is entered"<<endl;
+		cout<<" || No data is entered || "<<endl;
+
+		cout<<endl;
 
 	}
 
@@ -124,7 +140,7 @@ void search()
 
 	string rollno;
 
-				cout<<"Enter the roll no of student"<<endl;
+				cout<<" || Enter the roll no of student || "<<endl;
 
 				cin>>rollno;
 
@@ -132,15 +148,15 @@ void search()
 
 					if(rollno==arr2[i]){
 
-						cout<<"Name "<<arr1[i]<<endl;
+						cout<<" Name of the student : "<<arr1[i]<<endl;
 
-	    	        	cout<<"Roll no "<<arr2[i]<<endl;
+	    	        	cout<<" Roll no : "<<arr2[i]<<endl;
 
-	    		        cout<<"Course "<<arr3[i]<<endl;
+	    		        cout<<" Branch : "<<arr3[i]<<endl;
 
-	    		        cout<<"Class "<<arr4[i]<<endl;
+	    		        cout<<" Section : "<<arr4[i]<<endl;
 
-	    	        	cout<<"Contact "<<arr5[i]<<endl;
+	    	        	cout<<" Contact : "<<arr5[i]<<endl;
 
 					}
 
@@ -155,7 +171,9 @@ void update()
 {
     if(total==0){
 
-		cout<<"No data is entered"<<endl;
+		cout<<" || No data is entered || "<<endl;
+
+		cout<<endl;
 
 	}
 
@@ -163,7 +181,7 @@ void update()
 
 		string rollno;
 
-				cout<<"Enter the roll no of student which you want to update"<<endl;
+				cout<<" || Enter the Roll no. of student which you want to update || "<<endl;
 
 				cin>>rollno;
 
@@ -171,39 +189,45 @@ void update()
 
 					if(rollno==arr2[i]){
 
-						cout<<"\nPrevious data"<<endl<<endl;
+                        cout<<endl;
+
+						cout<<"Previous data"<<endl;
 
 						cout<<"Data of Student "<<i+1<<endl;
 
-						cout<<"Name "<<arr1[i]<<endl;
+						cout<<endl;
 
-	    	        	cout<<"Roll no "<<arr2[i]<<endl;
+						cout<<" Name of the student : "<<arr1[i]<<endl;
 
-	    		        cout<<"Course "<<arr3[i]<<endl;
+	    	        	cout<<" Roll no : "<<arr2[i]<<endl;
 
-	    		        cout<<"Class "<<arr4[i]<<endl;
+	    		        cout<<" Branch : "<<arr3[i]<<endl;
 
-	    	        	cout<<"Contact "<<arr5[i]<<endl;
+	    		        cout<<" Section : "<<arr4[i]<<endl;
 
-	    	        	cout<<"\nEnter new data"<<endl<<endl;
+	    	        	cout<<" Contact : "<<arr5[i]<<endl;
 
-							cout<<"Enter name ";
+	    	        	cout<<endl;
+
+	    	        	cout<<" || Enter new data || "<<endl<<endl;
+
+							cout<<" Name of the student : ";
 
 				            cin>>arr1[i];
 
-				            cout<<"Enter Roll no ";
+				            cout<<" Roll no : ";
 
 				            cin>>arr2[i];
 
-			             	cout<<"Enter course ";
+			             	cout<<" Course : ";
 
 				            cin>>arr3[i];
 
-				            cout<<"Enter class ";
+				            cout<<" Section : ";
 
 				            cin>>arr4[i];
 
-				            cout<<"Enter contact ";
+				            cout<<" Contact : ";
 
 				            cin>>arr5[i];
 
@@ -222,7 +246,9 @@ void deleterecord()
 {
     if(total==0){
 
-		cout<<"No data is entered"<<endl;
+		cout<<" || No data is entered || "<<endl;
+
+		cout<<endl;
 
 	}
 
@@ -230,9 +256,9 @@ void deleterecord()
 
 		int a;
 
-	        	cout<<"Press 1 to delete all record"<<endl;
+	        	cout<<" || Press 1 to delete all record || "<<endl;
 
-				cout<<"Press 2 to delete specific record"<<endl;
+				cout<<" || Press 2 to delete specific record || "<<endl;
 
 				cin>>a;
 
@@ -240,7 +266,7 @@ void deleterecord()
 
 					total=0;
 
-					cout<<"All record is deleted..!!"<<endl;
+					cout<<" || All record is deleted..!! || "<<endl;
 
 				}
 
@@ -248,7 +274,7 @@ void deleterecord()
 
 				string rollno;
 
-				cout<<"Enter the roll no of student which you wanted to delete"<<endl;
+				cout<<" || Enter the Roll no. of the student you want to delete || "<<endl;
 
 				cin>>rollno;
 
@@ -272,7 +298,7 @@ void deleterecord()
 
 					total--;
 
-					cout<<"Your required record is deleted"<<endl;
+					cout<<" || Your required record is deleted || "<<endl;
 
 					}
 
@@ -282,7 +308,9 @@ void deleterecord()
 
 			else {
 
-				cout<<"Invalid input";
+				cout<<" || Invalid input || ";
+
+				cout<<endl;
 
 			}
 
@@ -296,17 +324,21 @@ main(){
 
 	while(true){
 
-	cout<<"\nPress 1 to enter data"<<endl;
+    cout<< " ||||  STUDENT RECORD MANAGEMENT SYSTEM  |||| "<<endl;
 
-	cout<<"Press 2 to show data"<<endl;
+    cout<<endl;
 
-	cout<<"Press 3 to search data"<<endl;
+	cout<<"Press 1 to enter data : "<<endl;
 
-	cout<<"Press 4 to update data"<<endl;
+	cout<<"Press 2 to show data : "<<endl;
 
-	cout<<"Press 5 to delete data"<<endl;
+	cout<<"Press 3 to search data : "<<endl;
 
-	cout<<"Press 6 to exit"<<endl;
+	cout<<"Press 4 to update data : "<<endl;
+
+	cout<<"Press 5 to delete data : "<<endl;
+
+	cout<<"Press 6 to exit : "<<endl;
 
 	cin>>value;
 
@@ -350,7 +382,9 @@ main(){
 
 		default:
 
-			cout<<"Invalid input"<<endl;
+			cout<<" ||Invalid input || "<<endl;
+
+			cout<<endl;
 
 			break;
 
@@ -359,3 +393,4 @@ main(){
 }
 
 }
+
